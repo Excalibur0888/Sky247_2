@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sky247 Fantasy Cricket</title>
+    <meta name="description" content="Get in touch with Sky247 support team for any questions or assistance.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+				<div class="header__inner">
+						<a href="index.html" class="logo">
+								<img src="img/logo.svg" alt="Sky247 Logo">
+						</a>
+						<div class="burger-menu">
+								<span></span>
+								<span></span>
+								<span></span>
+						</div>
+						<nav class="nav">
+								<ul class="nav__list">
+										<li><a href="index.html">Home</a></li>
+										<li><a href="rules.html">Rules</a></li>
+										<li><a href="about.html">About Us</a></li>
+										<li><a href="contacts.html" class="active">Contact</a></li>
+										<li class="nav__download">
+												<a href="contacts.html" class="btn btn--primary">Download App</a>
+										</li>
+								</ul>
+						</nav>
+						<div class="header__buttons header__buttons--desktop">
+								<a href="contacts.html" class="btn btn--primary">Download App</a>
+						</div>
+				</div>
+		</div>
+</header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>We're here to help you</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="contact__grid">
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <svg width="40" height="40" viewBox="0 0 40 40">
+                                <path fill="#00FF88" d="M36 8H4c-2.21 0-4 1.79-4 4v16c0 2.21 1.79 4 4 4h32c2.21 0 4-1.79 4-4V12c0-2.21-1.79-4-4-4zm0 4v.23l-16 10.5L4 12.23V12h32zM4 28v-9.43l14.97 9.86c.31.2.67.3 1.03.3s.72-.1 1.03-.3L36 18.57V28H4z"/>
+                            </svg>
+                            <h3>Email Support</h3>
+                            <p>sky247@gmail.com</p>
+                            <p>Available 24/7</p>
+                        </div>
+
+                        <div class="contact__card">
+                            <svg width="40" height="40" viewBox="0 0 40 40">
+                                <path fill="#00FF88" d="M32 4H8C5.79 4 4 5.79 4 8v18c0 2.21 1.79 4 4 4h4v6l8-6h12c2.21 0 4-1.79 4-4V8c0-2.21-1.79-4-4-4zm0 22H15.17l-3.42 2.57L8 30v-4H8V8h24v18z"/>
+                            </svg>
+                            <h3>Live Chat</h3>
+                            <p>Chat with our support team</p>
+                            <p>Response time: 2 minutes</p>
+                        </div>
+
+                        <div class="contact__card">
+                            <svg width="40" height="40" viewBox="0 0 40 40">
+                                <path fill="#00FF88" d="M20 0C8.95 0 0 8.95 0 20s8.95 20 20 20 20-8.95 20-20S31.05 0 20 0zm2 34h-4v-4h4v4zm4.13-15.49l-1.79 1.84C22.24 22.48 22 24.46 22 26h-4v-1c0-2.21.47-3.59 2.34-5.45l2.49-2.52c.76-.76 1.17-1.79 1.17-2.83 0-2.21-1.79-4-4-4s-4 1.79-4 4h-4c0-4.42 3.58-8 8-8s8 3.58 8 8c0 1.76-.71 3.35-1.87 4.51z"/>
+                            </svg>
+                            <h3>FAQ</h3>
+                            <p>Find answers to common questions</p>
+                            <a href="rules.html#faq" class="btn btn--text">View FAQ</a>
+                        </div>
+                    </div>
+
+                    <div class="contact__form">
+                        <h2>Send us a message</h2>
+                        <form action="thanks_form.php" method="POST" class="form">
+                            <div class="form__group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="technical">Technical Support</option>
+                                    <option value="account">Account Related</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+
+                            <div class="form__group form__group--checkbox">
+                                <input type="checkbox" id="agreement" name="agreement" required>
+                                <label for="agreement">I agree with the Privacy Policy</label>
+                            </div>
+
+                            <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <img src="img/logo.svg" alt="Sky247 Logo" class="footer__logo">
+                    <p>Your trusted fantasy cricket platform in India</p>
+                </div>
+                <div class="footer__col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="rules.html">Rules</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="contacts.html">Support</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Sky247. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
