@@ -2,509 +2,421 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+		<link rel="icon" type="image/png" href="img/favicon.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sky247 - Fantasy Cricket Platform in India</title>
-    <meta name="description" content="Experience fantasy cricket with Sky247. Join the most exciting fantasy sports platform in India.">
+    <title>Sky247 - Fantasy Cricket Platform</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <a href="index.html" class="logo">
-                    <img src="img/logo.svg" alt="Sky247 Logo">
-                </a>
-                <div class="burger-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="rules.html">Rules</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contacts.html">Contact</a></li>
-                        <li class="nav__download">
-                            <a href="contacts.html" class="btn btn--primary">Download App</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="header__buttons header__buttons--desktop">
-                    <a href="contacts.html" class="btn btn--primary">Download App</a>
-                </div>
+        <div class="container header__container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.svg" alt="Sky247">
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="rules.html">Rules</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="header__buttons">
+                <a href="contacts.html" class="btn btn--primary">Download App</a>
+            </div>
+            <div class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="hero">
-            <div class="container">
+            <div class="container hero__container">
                 <div class="hero__content">
-                    <h1>Welcome to Sky247</h1>
-                    <p>Experience the thrill of fantasy cricket on India's trusted platform</p>
+                    <h1>Your Ultimate Fantasy Cricket Experience</h1>
+                    <p>Join millions of players, create your dream team, and compete for amazing prizes in the most exciting fantasy cricket platform.</p>
                     <div class="hero__buttons">
-                        <a href="contacts.html" class="btn btn--primary btn--large">Download App</a>
-                        <a href="rules.html" class="btn btn--outline btn--large">Learn More</a>
+                        <a href="contacts.html" class="btn btn--primary btn--large">Start Playing Now</a>
+                        <a href="#how-it-works" class="btn btn--outline btn--large">Learn More</a>
+                    </div>
+                    <div class="hero__stats">
+                        <div class="stat">
+                            <span class="stat__number">1M+</span>
+                            <span class="stat__label">Active Players</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number">₹10Cr+</span>
+                            <span class="stat__label">Prizes Won</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number">4.8★</span>
+                            <span class="stat__label">App Rating</span>
+                        </div>
                     </div>
                 </div>
-                <div class="hero__floating-elements">
-                    <img src="img/cricket-ball.svg" alt="Cricket Ball" class="floating-ball">
-                    <img src="img/cricket-bat.svg" alt="Cricket Bat" class="floating-bat">
-                </div>
-            </div>
-        </section>
-
-        <section class="statistics">
-            <div class="container">
-                <div class="statistics__grid">
-                    <div class="stat-card">
-                        <h3>1M+</h3>
-                        <p>Active Users</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>₹10Cr+</h3>
-                        <p>Prizes Distributed</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>100K+</h3>
-                        <p>Daily Matches</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>4.8★</h3>
-                        <p>User Rating</p>
-                    </div>
+                <div class="hero__image">
+                    <img src="img/hero-app.jpg" alt="Sky247 App">
                 </div>
             </div>
         </section>
 
-        <section class="upcoming-matches">
-            <div class="container">
-                <h2>Upcoming Matches</h2>
-                <div class="matches-grid">
-                    <div class="match-card">
-                        <div class="match-teams">
-                            <div class="team">
-                                <img src="img/india.webp" alt="India">
-                                <span>IND</span>
-                            </div>
-                            <div class="vs">VS</div>
-                            <div class="team">
-                                <img src="img/australia.webp" alt="Australia">
-                                <span>AUS</span>
-                            </div>
-                        </div>
-                        <div class="match-info">
-                            <div class="match-time">Today, 7:30 PM</div>
-                            <div class="prize-pool">Prize Pool: ₹10 Crores</div>
-                            <a href="contacts.html" class="btn btn--primary">Create Team</a>
-                        </div>
-                    </div>
-
-                    <div class="match-card">
-                        <div class="match-teams">
-                            <div class="team">
-                                <img src="img/england.webp" alt="England">
-                                <span>ENG</span>
-                            </div>
-                            <div class="vs">VS</div>
-                            <div class="team">
-                                <img src="img/south-africa.webp" alt="South Africa">
-                                <span>SA</span>
-                            </div>
-                        </div>
-                        <div class="match-info">
-                            <div class="match-time">Today, 9:30 PM</div>
-                            <div class="prize-pool">Prize Pool: ₹8 Crores</div>
-                            <a href="contacts.html" class="btn btn--primary">Create Team</a>
-                        </div>
-                    </div>
-
-                    <div class="match-card">
-                        <div class="match-teams">
-                            <div class="team">
-                                <img src="img/pakistan.webp" alt="Pakistan">
-                                <span>PAK</span>
-                            </div>
-                            <div class="vs">VS</div>
-                            <div class="team">
-                                <img src="img/sri-lanka.webp" alt="Sri Lanka">
-                                <span>SL</span>
-                            </div>
-                        </div>
-                        <div class="match-info">
-                            <div class="match-time">Tomorrow, 2:30 PM</div>
-                            <div class="prize-pool">Prize Pool: ₹7 Crores</div>
-                            <a href="contacts.html" class="btn btn--primary">Create Team</a>
-                        </div>
-                    </div>
-
-                    <div class="match-card">
-                        <div class="match-teams">
-                            <div class="team">
-                                <img src="img/zimbabwe.webp" alt="Zimbabwe">
-                                <span>ZIM</span>
-                            </div>
-                            <div class="vs">VS</div>
-                            <div class="team">
-                                <img src="img/bangladesh.webp" alt="Bangladesh">
-                                <span>BAN</span>
-                            </div>
-                        </div>
-                        <div class="match-info">
-                            <div class="match-time">Tomorrow, 5:30 PM</div>
-                            <div class="prize-pool">Prize Pool: ₹6 Crores</div>
-                            <a href="contacts.html" class="btn btn--primary">Create Team</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="featured-players">
-            <div class="container">
-                <h2>Top Players</h2>
-                <div class="players-grid">
-                    <div class="player-card">
-                        <div class="player-image">
-                            <img src="img/virat-kohli.jpg" alt="Virat Kohli">
-                            <div class="player-rating">98</div>
-                        </div>
-                        <div class="player-info">
-                            <h3>Virat Kohli</h3>
-                            <p>Batsman</p>
-                            <div class="player-stats">
-                                <div class="stat">
-                                    <span>Batting</span>
-                                    <div class="stat-bar" style="--width: 95%"></div>
-                                </div>
-                                <div class="stat">
-                                    <span>Fielding</span>
-                                    <div class="stat-bar" style="--width: 90%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="player-card">
-                        <div class="player-image">
-                            <img src="img/rohit-sharma.jpg" alt="Rohit Sharma">
-                            <div class="player-rating">96</div>
-                        </div>
-                        <div class="player-info">
-                            <h3>Rohit Sharma</h3>
-                            <p>Batsman</p>
-                            <div class="player-stats">
-                                <div class="stat">
-                                    <span>Batting</span>
-                                    <div class="stat-bar" style="--width: 93%"></div>
-                                </div>
-                                <div class="stat">
-                                    <span>Fielding</span>
-                                    <div class="stat-bar" style="--width: 88%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="player-card">
-                        <div class="player-image">
-                            <img src="img/jasprit-bumrah.jpg" alt="Jasprit Bumrah">
-                            <div class="player-rating">95</div>
-                        </div>
-                        <div class="player-info">
-                            <h3>Jasprit Bumrah</h3>
-                            <p>Bowler</p>
-                            <div class="player-stats">
-                                <div class="stat">
-                                    <span>Bowling</span>
-                                    <div class="stat-bar" style="--width: 94%"></div>
-                                </div>
-                                <div class="stat">
-                                    <span>Economy</span>
-                                    <div class="stat-bar" style="--width: 92%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="player-card">
-                        <div class="player-image">
-                            <img src="img/ravindra-jadeja.jpg" alt="Ravindra Jadeja">
-                            <div class="player-rating">94</div>
-                        </div>
-                        <div class="player-info">
-                            <h3>Ravindra Jadeja</h3>
-                            <p>All-rounder</p>
-                            <div class="player-stats">
-                                <div class="stat">
-                                    <span>Batting</span>
-                                    <div class="stat-bar" style="--width: 85%"></div>
-                                </div>
-                                <div class="stat">
-                                    <span>Bowling</span>
-                                    <div class="stat-bar" style="--width: 88%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="player-card">
-                        <div class="player-image">
-                            <img src="img/kl-rahul.jpg" alt="KL Rahul">
-                            <div class="player-rating">92</div>
-                        </div>
-                        <div class="player-info">
-                            <h3>KL Rahul</h3>
-                            <p>Wicket-keeper Batsman</p>
-                            <div class="player-stats">
-                                <div class="stat">
-                                    <span>Batting</span>
-                                    <div class="stat-bar" style="--width: 89%"></div>
-                                </div>
-                                <div class="stat">
-                                    <span>Keeping</span>
-                                    <div class="stat-bar" style="--width: 87%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="player-card">
-                        <div class="player-image">
-                            <img src="img/hardik-pandya.jpg" alt="Hardik Pandya">
-                            <div class="player-rating">91</div>
-                        </div>
-                        <div class="player-info">
-                            <h3>Hardik Pandya</h3>
-                            <p>All-rounder</p>
-                            <div class="player-stats">
-                                <div class="stat">
-                                    <span>Batting</span>
-                                    <div class="stat-bar" style="--width: 86%"></div>
-                                </div>
-                                <div class="stat">
-                                    <span>Bowling</span>
-                                    <div class="stat-bar" style="--width: 84%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="how-it-works">
-            <div class="container">
-                <h2>How It Works</h2>
-                <div class="steps">
-                    <div class="step">
-                        <div class="step__image">
-                            <img src="img/app-screen-1.jpg" alt="App Screenshot">
-                            <div class="step__number">1</div>
-                        </div>
-                        <div class="step__content">
-                            <h3>Download & Register</h3>
-                            <p>Get the Sky247 app and create your account in minutes. Join the largest fantasy cricket community in India.</p>
-                            <a href="contacts.html" class="btn btn--primary">Download Now</a>
-                        </div>
-                    </div>
-                    <div class="step">
-                        <div class="step__image">
-                            <img src="img/app-screen-2.jpg" alt="Team Creation">
-                            <div class="step__number">2</div>
-                        </div>
-                        <div class="step__content">
-                            <h3>Create Your Team</h3>
-                            <p>Select your favorite players, analyze their performance, and build your dream cricket team with our intuitive interface.</p>
-                            <a href="rules.html" class="btn btn--primary">Learn Team Rules</a>
-                        </div>
-                    </div>
-                    <div class="step">
-                        <div class="step__image">
-                            <img src="img/app-screen-3.jpg" alt="Contests">
-                            <div class="step__number">3</div>
-                        </div>
-                        <div class="step__content">
-                            <h3>Join Contests</h3>
-                            <p>Participate in exciting contests, compete with other players, and win big prizes based on your team's performance.</p>
-                            <a href="contacts.html" class="btn btn--primary">View Contests</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+        <!-- Features Section -->
         <section class="features">
             <div class="container">
                 <h2>Why Choose Sky247</h2>
                 <div class="features__grid">
                     <div class="feature-card">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M24 4L6 12V22C6 31.1 13.4 39.5 24 42C34.6 39.5 42 31.1 42 22V12L24 4ZM24 24H38C37.1 31.1 31.3 37.5 24 39.8V24H10V13.7L24 7.6V24Z" fill="#2196F3"/>
-                        </svg>
+                        <div class="feature-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40">
+                                <path fill="#00FF88" d="M34 12H24V6c0-3.31-2.69-6-6-6s-6 2.69-6 6v6H6c-2.21 0-4 1.79-4 4v20c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4V16c0-2.21-1.79-4-4-4zm-16-6c0-1.1.9-2 2-2s2 .9 2 2v6h-4V6zm16 30H6V16h28v20zm-14-6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/>
+                            </svg>
+                        </div>
                         <h3>Secure Platform</h3>
-                        <p>Your data security is our top priority at Sky247</p>
+                        <p>Your data and transactions are protected with bank-grade security measures</p>
                     </div>
                     <div class="feature-card">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M24 4C12.95 4 4 12.95 4 24C4 35.05 12.95 44 24 44C35.05 44 44 35.05 44 24C44 12.95 35.05 4 24 4ZM26 34H22V22H26V34ZM26 18H22V14H26V18Z" fill="#2196F3"/>
-                        </svg>
+                        <div class="feature-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40">
+                                <path fill="#00FF88" d="M36 4H4C2.9 4 2 4.9 2 6v28c0 1.1.9 2 2 2h32c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-2 28H6V8h28v24zM16 16h-4v8h4v-8zm6 0h-4v8h4v-8zm6 0h-4v8h4v-8zM14 14h12v2H14v-2zm0 10h12v2H14v-2z"/>
+                                <path fill="#00FF88" d="M20 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm8 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-16 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                            </svg>
+                        </div>
+                        <h3>Quick Payouts</h3>
+                        <p>Withdraw your winnings instantly with our fast and reliable payment system</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40">
+                                <path fill="#00FF88" d="M36 8h-8V4c0-2.21-1.79-4-4-4h-8c-2.21 0-4 1.79-4 4v4H4c-2.21 0-4 1.79-4 4v24c0 2.21 1.79 4 4 4h32c2.21 0 4-1.79 4-4V12c0-2.21-1.79-4-4-4zm-20-4h8v4h-8V4zm20 32H4V12h8v4c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-4h8v24z"/>
+                            </svg>
+                        </div>
                         <h3>24/7 Support</h3>
-                        <p>Our dedicated team is always here to help</p>
-                    </div>
-                    <div class="feature-card">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M24 4C12.95 4 4 12.95 4 24C4 35.05 12.95 44 24 44C35.05 44 44 35.05 44 24C44 12.95 35.05 4 24 4ZM32 30.4L29.6 32.8L24 27.2L18.4 32.8L16 30.4L21.6 24.8L16 19.2L18.4 16.8L24 22.4L29.6 16.8L32 19.2L26.4 24.8L32 30.4Z" fill="#2196F3"/>
-                        </svg>
-                        <h3>User Experience</h3>
-                        <p>Enjoy seamless fantasy cricket experience</p>
+                        <p>Our dedicated support team is always ready to help you with any questions</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="features-extended">
+        <!-- Live Matches Section -->
+        <section class="live-matches">
             <div class="container">
-                <div class="feature-extended-card">
-                    <div class="feature-extended-content">
-                        <h3>Advanced Team Analytics</h3>
-                        <p>Get detailed insights into player performance, team statistics, and match predictions to make informed decisions.</p>
-                        <a href="contacts.html" class="btn btn--primary">Learn More</a>
-                    </div>
-                    <div class="feature-extended-image">
-                        <img src="img/analytics.jpg" alt="Analytics Dashboard">
-                    </div>
+                <div class="section-header">
+                    <h2>Live Matches</h2>
                 </div>
+                <div class="matches-slider">
+                    <div class="match-card">
+                        <div class="match-card__teams">
+                            <div class="team">
+                                <img src="img/india.webp" alt="Team 1">
+                                <span>IND</span>
+                            </div>
+                            <span class="vs">VS</span>
+                            <div class="team">
+                                <img src="img/australia.webp" alt="Team 2">
+                                <span>AUS</span>
+                            </div>
+                        </div>
+                        <div class="match-card__info">
+                            <span class="match-type">T20 World Cup</span>
+                            <span class="match-time">Live</span>
+                        </div>
+                        <a href="contacts.html" class="btn btn--primary btn--full">Join Contest</a>
+                    </div>
 
-                <div class="feature-extended-card">
-                    <div class="feature-extended-content">
-                        <h3>Instant Withdrawals</h3>
-                        <p>Quick and secure payment processing ensures you receive your winnings without any delays.</p>
-                        <a href="contacts.html" class="btn btn--primary">View Payment Options</a>
+                    <div class="match-card">
+                        <div class="match-card__teams">
+                            <div class="team">
+                                <img src="img/england.webp" alt="Team 3">
+                                <span>ENG</span>
+                            </div>
+                            <span class="vs">VS</span>
+                            <div class="team">
+                                <img src="img/south-africa.webp" alt="Team 4">
+                                <span>SA</span>
+                            </div>
+                        </div>
+                        <div class="match-card__info">
+                            <span class="match-type">ODI Series</span>
+                            <span class="match-time">Live</span>
+                        </div>
+                        <a href="contacts.html" class="btn btn--primary btn--full">Join Contest</a>
                     </div>
-                    <div class="feature-extended-image">
-                        <img src="img/payments.jpg" alt="Payment Processing">
-                    </div>
-                </div>
 
-                <div class="feature-extended-card">
-                    <div class="feature-extended-content">
-                        <h3>Live Match Updates</h3>
-                        <p>Stay updated with real-time scores, player performance, and point calculations during matches.</p>
-                        <a href="contacts.html" class="btn btn--primary">Try Now</a>
+                    <div class="match-card">
+                        <div class="match-card__teams">
+                            <div class="team">
+                                <img src="img/new-zealand.webp" alt="Team 5">
+                                <span>NZ</span>
+                            </div>
+                            <span class="vs">VS</span>
+                            <div class="team">
+                                <img src="img/pakistan.webp" alt="Team 6">
+                                <span>PAK</span>
+                            </div>
+                        </div>
+                        <div class="match-card__info">
+                            <span class="match-type">Test Series</span>
+                            <span class="match-time">Live</span>
+                        </div>
+                        <a href="contacts.html" class="btn btn--primary btn--full">Join Contest</a>
                     </div>
-                    <div class="feature-extended-image">
-                        <img src="img/live-updates.jpg" alt="Live Updates">
+
+                    <div class="match-card">
+                        <div class="match-card__teams">
+                            <div class="team">
+                                <img src="img/scotland.webp" alt="Team 7">
+                                <span>SCO</span>
+                            </div>
+                            <span class="vs">VS</span>
+                            <div class="team">
+                                <img src="img/bangladesh.webp" alt="Team 8">
+                                <span>BAN</span>
+                            </div>
+                        </div>
+                        <div class="match-card__info">
+                            <span class="match-type">T20 Series</span>
+                            <span class="match-time">Live</span>
+                        </div>
+                        <a href="contacts.html" class="btn btn--primary btn--full">Join Contest</a>
+                    </div>
+
+                    <div class="match-card">
+                        <div class="match-card__teams">
+                            <div class="team">
+                                <img src="img/sri-lanka.webp" alt="Team 9">
+                                <span>SL</span>
+                            </div>
+                            <span class="vs">VS</span>
+                            <div class="team">
+                                <img src="img/afghanistan.webp" alt="Team 10">
+                                <span>AFG</span>
+                            </div>
+                        </div>
+                        <div class="match-card__info">
+                            <span class="match-type">ODI Series</span>
+                            <span class="match-time">Live</span>
+                        </div>
+                        <a href="contacts.html" class="btn btn--primary btn--full">Join Contest</a>
+                    </div>
+
+                    <div class="match-card">
+                        <div class="match-card__teams">
+                            <div class="team">
+                                <img src="img/ireland.webp" alt="Team 11">
+                                <span>IRE</span>
+                            </div>
+                            <span class="vs">VS</span>
+                            <div class="team">
+                                <img src="img/zimbabwe.webp" alt="Team 12">
+                                <span>ZIM</span>
+                            </div>
+                        </div>
+                        <div class="match-card__info">
+                            <span class="match-type">T20 Series</span>
+                            <span class="match-time">Live</span>
+                        </div>
+                        <a href="contacts.html" class="btn btn--primary btn--full">Join Contest</a>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- How It Works Section -->
+        <section class="how-it-works" id="how-it-works">
+            <div class="container">
+                <h2>Start Playing in 3 Easy Steps</h2>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-card__number">1</div>
+                        <div class="step-card__content">
+                            <h3>Download & Register</h3>
+                            <p>Get the Sky247 app from our website and create your account in minutes</p>
+                        </div>
+                        <img src="img/step1.jpg" alt="Download App" class="step-card__image">
+                    </div>
+                    <div class="step-card">
+                        <div class="step-card__number">2</div>
+                        <div class="step-card__content">
+                            <h3>Create Your Team</h3>
+                            <p>Pick your players and build your dream team within the given credits</p>
+                        </div>
+                        <img src="img/step2.jpg" alt="Create Team" class="step-card__image">
+                    </div>
+                    <div class="step-card">
+                        <div class="step-card__number">3</div>
+                        <div class="step-card__content">
+                            <h3>Join Contests</h3>
+                            <p>Enter contests and compete with other players to win big prizes</p>
+                        </div>
+                        <img src="img/step3.jpg" alt="Join Contests" class="step-card__image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
         <section class="testimonials">
             <div class="container">
-                <h2>What Our Users Say</h2>
-                <div class="manual-slider">
-                    <div class="slider-container">
-                        <div class="slide">
-                            <div class="testimonial-card">
-                                <div class="testimonial-avatar">
-                                    <img src="img/user1.jpg" alt="User">
+                <h2>What Our Players Say</h2>
+                <div class="testimonials-slider">
+                    <div class="testimonials-track">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__rating">★★★★★</div>
+                            <p class="testimonial-card__text">"The best fantasy cricket platform I've ever used. Quick payouts and amazing contests!"</p>
+                            <div class="testimonial-card__author">
+                                <img src="img/user1.jpg" alt="User">
+                                <div>
+                                    <h4>Rahul Sharma</h4>
+                                    <span>Won ₹50,000</span>
                                 </div>
-                                <p class="testimonial-text">"Sky247 has transformed how I experience cricket. The platform is user-friendly and the rewards are amazing!"</p>
-                                <div class="testimonial-author">John Smith</div>
                             </div>
                         </div>
-                        <div class="slide">
-                            <div class="testimonial-card">
-                                <div class="testimonial-avatar">
-                                    <img src="img/user2.jpg" alt="User">
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__rating">★★★★★</div>
+                            <p class="testimonial-card__text">"Incredible platform with user-friendly interface. The live scoring feature is amazing!"</p>
+                            <div class="testimonial-card__author">
+                                <img src="img/user2.jpg" alt="User">
+                                <div>
+                                    <h4>Priya Patel</h4>
+                                    <span>Won ₹75,000</span>
                                 </div>
-                                <p class="testimonial-text">"The best fantasy cricket platform I've used. Great features and excellent customer support."</p>
-                                <div class="testimonial-author">Mike Johnson</div>
                             </div>
                         </div>
-                        <div class="slide">
-                            <div class="testimonial-card">
-                                <div class="testimonial-avatar">
-                                    <img src="img/user3.jpg" alt="User">
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__rating">★★★★★</div>
+                            <p class="testimonial-card__text">"The variety of contests and tournaments keeps me engaged. Best fantasy cricket experience!"</p>
+                            <div class="testimonial-card__author">
+                                <img src="img/user3.jpg" alt="User">
+                                <div>
+                                    <h4>Arun Kumar</h4>
+                                    <span>Won ₹100,000</span>
                                 </div>
-                                <p class="testimonial-text">"Impressive platform with fair play and instant withdrawals. Highly recommended!"</p>
-                                <div class="testimonial-author">David Wilson</div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__rating">★★★★★</div>
+                            <p class="testimonial-card__text">"Secure platform with instant withdrawals. The customer support is excellent!"</p>
+                            <div class="testimonial-card__author">
+                                <img src="img/user4.jpg" alt="User">
+                                <div>
+                                    <h4>Sneha Reddy</h4>
+                                    <span>Won ₹60,000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__rating">★★★★★</div>
+                            <p class="testimonial-card__text">"The analytics and statistics help me make informed decisions. Highly recommended!"</p>
+                            <div class="testimonial-card__author">
+                                <img src="img/user5.jpg" alt="User">
+                                <div>
+                                    <h4>Vikram Singh</h4>
+                                    <span>Won ₹90,000</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="slider-nav">
-                        <span class="slider-dot active"></span>
-                        <span class="slider-dot"></span>
-                        <span class="slider-dot"></span>
-                    </div>
-                    <div class="slider-arrows">
-                        <button class="slider-arrow prev">←</button>
-                        <button class="slider-arrow next">→</button>
+                    <div class="testimonials-nav">
+                        <button class="testimonials-nav__btn prev">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                            </svg>
+                        </button>
+                        <div class="testimonials-dots"></div>
+                        <button class="testimonials-nav__btn next">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="app-download">
+        <!-- Download App Section -->
+        <section class="download-app">
             <div class="container">
-                <div class="app-download__content">
-                    <div class="app-download__text">
-                        <h2>Download Sky247 App</h2>
-                        <p>Join millions of users and start playing fantasy cricket today!</p>
-                        <div class="app-download__buttons">
-                            <a href="contacts.html" class="btn btn--primary">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M17.523 15.343l-2.121-1.213-2.317 2.317a11.158 11.158 0 01-4.412-4.412l2.317-2.317-1.213-2.121-4.243 4.242a1 1 0 00-.217 1.095C8.14 17.95 13.05 22.86 18.066 25.683a1 1 0 001.095-.217l4.242-4.243-2.121-2.121-3.759 3.759z" fill="currentColor"/>
-                                    <path d="M6.343 4.929l2.121-2.122-1.414-1.414-2.121 2.121a1 1 0 000 1.414l1.414 1.414a1 1 0 001.414 0l2.121-2.121-1.414-1.414-2.121 2.122zM19.071 6.343l2.122 2.121 1.414-1.414-2.121-2.121a1 1 0 00-1.414 0l-1.414 1.414a1 1 0 000 1.414l2.121 2.121 1.414-1.414-2.122-2.121z" fill="currentColor"/>
-                                </svg>
-                                Download APK
-                            </a>
-                            <a href="contacts.html" class="btn btn--outline">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z" fill="currentColor"/>
-                                </svg>
-                                iOS Coming Soon
-                            </a>
+                <div class="download-app__content">
+                    <h2>Download Sky247 App Now</h2>
+                    <p>Join the largest fantasy cricket community and start winning big!</p>
+                    <div class="download-app__buttons">
+                        <a href="contacts.html" class="btn btn--primary btn--large">Download Now</a>
+                        <div class="qr-code">
+                            <img src="img/qr-code.png" alt="QR Code">
                         </div>
                     </div>
-                    <div class="app-download__image">
-                        <img src="img/app-screens.jpg" alt="Sky247 App Screens">
-                    </div>
+                </div>
+                <div class="download-app__image">
+                    <img src="img/app-screens.jpg" alt="App Screens">
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer__grid">
-                <div class="footer__col">
-                    <img src="img/logo.svg" alt="Sky247 Logo" class="footer__logo">
-                    <p>Your trusted fantasy cricket platform in India</p>
-                </div>
-                <div class="footer__col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                        <li><a href="terms-conditions.html">Terms & Conditions</a></li>
-                        <li><a href="rules.html">Rules</a></li>
-                    </ul>
-                </div>
-                <div class="footer__col">
-                    <h4>Contact Us</h4>
-                    <ul>
-                        <li><a href="contacts.html">Support</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer__bottom">
-                <p>&copy; 2024 Sky247. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+			<div class="container">
+					<div class="footer__grid">
+							<div class="footer__info">
+									<img src="img/logo.svg" alt="Sky247" class="footer__logo">
+									<p>Your trusted fantasy cricket platform for creating teams and winning prizes.</p>
+									<div class="footer__social">
+											<a href="index.html"><svg width="24" height="24" viewBox="0 0 24 24">
+													<path fill="currentColor" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/>
+											</svg></a>
+											<a href="index.html"><svg width="24" height="24" viewBox="0 0 24 24">
+													<path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+											</svg></a>
+											<a href="index.html"><svg width="24" height="24" viewBox="0 0 24 24">
+													<path fill="currentColor" d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 1 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
+											</svg></a>
+									</div>
+							</div>
+							<div class="footer__links">
+									<h4>Quick Links</h4>
+									<ul>
+											<li><a href="about.html">About Us</a></li>
+											<li><a href="rules.html">Rules</a></li>
+											<li><a href="contacts.html">Contact</a></li>
+									</ul>
+							</div>
+							<div class="footer__links">
+									<h4>Legal</h4>
+									<ul>
+											<li><a href="terms-conditions.html">Terms & Conditions</a></li>
+											<li><a href="privacy-policy.html">Privacy Policy</a></li>
+									</ul>
+							</div>
+							<div class="footer__contact">
+									<h4>Contact Us</h4>
+									<ul>
+											<li>
+													<svg width="20" height="20" viewBox="0 0 20 20">
+															<path fill="currentColor" d="M17 3H3c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 12H3V7l7 4 7-4v8zm-7-5L3 6h14l-7 4z"/>
+													</svg>
+													<a href="mailto:sky247@gmail.com">sky247@gmail.com</a>
+											</li>
+											<li>
+													<svg width="20" height="20" viewBox="0 0 20 20">
+															<path fill="currentColor" d="M17.256 12.253c-.096-.667-.611-1.187-1.274-1.342-2.577-.604-3.223-2.088-3.332-3.734C12.193 7.092 11.38 7 10 7s-2.193.092-2.65.177c-.109 1.646-.755 3.13-3.332 3.734-.663.156-1.178.675-1.274 1.342l-.497 3.442C2.072 16.907 2.962 18 4.2 18h11.6c1.237 0 2.128-1.093 1.953-2.305l-.497-3.442zM10 15.492c-1.395 0-2.526-1.12-2.526-2.5s1.131-2.5 2.526-2.5 2.526 1.12 2.526 2.5-1.132 2.5-2.526 2.5zM19.95 6c-.024-1.5-3.842-3.999-9.95-4C3.891 2.001.073 4.5.05 6s.021 3.452 2.535 3.127c2.941-.381 2.76-1.408 2.76-2.876C5.345 5.227 7.737 4.98 10 4.98s4.654.247 4.655 1.271c0 1.468-.181 2.495 2.76 2.876C19.928 9.452 19.973 7.5 19.95 6z"/>
+													</svg>
+													<a href="tel:+917392851460">+91 (739) 285-1460</a>
+											</li>
+									</ul>
+							</div>
+					</div>
+					<div class="footer__bottom">
+							<p>&copy; 2024 Sky247. All rights reserved.</p>
+					</div>
+			</div>
+	</footer>
 
     <script src="js/main.js"></script>
 </body>

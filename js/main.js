@@ -163,35 +163,191 @@ function animateNumbers() {
 // Call animation function when DOM is loaded
 animateNumbers();
 
-// Burger menu functionality
+// Burger Menu
 document.addEventListener('DOMContentLoaded', function() {
     const burgerMenu = document.querySelector('.burger-menu');
     const nav = document.querySelector('.nav');
-    
+    const body = document.body;
+
     if (burgerMenu && nav) {
-        burgerMenu.addEventListener('click', function() {
+        burgerMenu.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
             burgerMenu.classList.toggle('active');
             nav.classList.toggle('active');
-            document.body.classList.toggle('menu-open');
+            body.classList.toggle('no-scroll');
+        });
+
+        // Close menu when clicking on a link
+        nav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                burgerMenu.classList.remove('active');
+                nav.classList.remove('active');
+                body.classList.remove('no-scroll');
+            });
         });
 
         // Close menu when clicking outside
         document.addEventListener('click', function(e) {
-            if (!nav.contains(e.target) && !burgerMenu.contains(e.target) && nav.classList.contains('active')) {
+            if (nav.classList.contains('active') && !nav.contains(e.target) && !burgerMenu.contains(e.target)) {
                 burgerMenu.classList.remove('active');
                 nav.classList.remove('active');
-                document.body.classList.remove('menu-open');
+                body.classList.remove('no-scroll');
             }
         });
 
-        // Close menu when clicking on a link
-        const navLinks = nav.querySelectorAll('a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', function() {
+        // Close menu on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && nav.classList.contains('active')) {
                 burgerMenu.classList.remove('active');
                 nav.classList.remove('active');
-                document.body.classList.remove('menu-open');
-            });
+                body.classList.remove('no-scroll');
+            }
         });
     }
+});
+
+// Testimonials Slider
+document.addEventListener('DOMContentLoaded', function() {
+    const track = document.querySelector('.testimonials-track');
+    const cards = document.querySelectorAll('.testimonial-card');
+    const prevBtn = document.querySelector('.testimonials-nav__btn.prev');
+    const nextBtn = document.querySelector('.testimonials-nav__btn.next');
+    const dotsContainer = document.querySelector('.testimonials-dots');
+
+    // Проверяем наличие всех необходимых элементов
+    if (!track || !cards.length || !prevBtn || !nextBtn || !dotsContainer) {
+        return; // Если хотя бы один элемент отсутствует, прекращаем выполнение
+    }
+
+    let currentSlide = 0;
+    let slidesPerView = getSlidesPerView();
+    let isDragging = false;
+    let startPos = 0;
+    let currentTranslate = 0;
+    let prevTranslate = 0;
+
+    // Create dots
+    const totalDots = 3;
+    for (let i = 0; i < totalDots; i++) {
+        const dot = document.createElement('div');
+        dot.classList.add('testimonials-dot');
+        if (i === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => goToSlide(i));
+        dotsContainer.appendChild(dot);
+    }
+
+    // Update slides per view on window resize
+    window.addEventListener('resize', () => {
+        slidesPerView = getSlidesPerView();
+        goToSlide(currentSlide);
+    });
+
+    // Navigation buttons
+    prevBtn.addEventListener('click', () => {
+        if (currentSlide > 0) {
+            goToSlide(currentSlide - 1);
+        }
+    });
+
+    nextBtn.addEventListener('click', () => {
+        if (currentSlide < cards.length - slidesPerView) {
+            goToSlide(currentSlide + 1);
+        }
+    });
+
+    // Touch events
+    track.addEventListener('touchstart', touchStart);
+    track.addEventListener('touchmove', touchMove);
+    track.addEventListener('touchend', touchEnd);
+
+    // Mouse events
+    track.addEventListener('mousedown', touchStart);
+    track.addEventListener('mousemove', touchMove);
+    track.addEventListener('mouseup', touchEnd);
+    track.addEventListener('mouseleave', touchEnd);
+
+    function touchStart(event) {
+        isDragging = true;
+        startPos = getPositionX(event);
+        track.style.cursor = 'grabbing';
+    }
+
+    function touchMove(event) {
+        if (!isDragging) return;
+        
+        const currentPosition = getPositionX(event);
+        currentTranslate = prevTranslate + currentPosition - startPos;
+        
+        // Add boundaries
+        const minTranslate = -(cards.length - slidesPerView) * (cards[0].offsetWidth + 30);
+        currentTranslate = Math.max(Math.min(currentTranslate, 0), minTranslate);
+        
+        track.style.transform = `translateX(${currentTranslate}px)`;
+    }
+
+    function touchEnd() {
+        isDragging = false;
+        track.style.cursor = 'grab';
+        
+        const movedBy = currentTranslate - prevTranslate;
+        
+        if (Math.abs(movedBy) > 100) {
+            if (movedBy < 0 && currentSlide < cards.length - slidesPerView) {
+                goToSlide(currentSlide + 1);
+            } else if (movedBy > 0 && currentSlide > 0) {
+                goToSlide(currentSlide - 1);
+            } else {
+                goToSlide(currentSlide);
+            }
+        } else {
+            goToSlide(currentSlide);
+        }
+    }
+
+    function getPositionX(event) {
+        return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+    }
+
+    function goToSlide(index) {
+        currentSlide = index;
+        prevTranslate = currentTranslate = -(index * (cards[0].offsetWidth + 30));
+        track.style.transform = `translateX(${currentTranslate}px)`;
+        
+        // Update dots
+        document.querySelectorAll('.testimonials-dot').forEach((dot, i) => {
+            dot.classList.toggle('active', i === index);
+        });
+        
+        // Update buttons
+        prevBtn.style.opacity = index === 0 ? '0.5' : '1';
+        nextBtn.style.opacity = index === cards.length - slidesPerView ? '0.5' : '1';
+    }
+
+    function getSlidesPerView() {
+        if (window.innerWidth < 768) return 1;
+        if (window.innerWidth < 1200) return 2;
+        return 3;
+    }
+
+    // Auto play
+    let autoPlayInterval = setInterval(() => {
+        if (currentSlide < cards.length - slidesPerView) {
+            goToSlide(currentSlide + 1);
+        } else {
+            goToSlide(0);
+        }
+    }, 5000);
+
+    // Pause auto play on hover
+    track.addEventListener('mouseenter', () => clearInterval(autoPlayInterval));
+    track.addEventListener('mouseleave', () => {
+        autoPlayInterval = setInterval(() => {
+            if (currentSlide < cards.length - slidesPerView) {
+                goToSlide(currentSlide + 1);
+            } else {
+                goToSlide(0);
+            }
+        }, 5000);
+    });
 }); 
