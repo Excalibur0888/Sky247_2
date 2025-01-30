@@ -21,9 +21,6 @@
 								<li><a href="contacts.html">Contacts</a></li>
 						</ul>
 				</nav>
-				<div class="header__buttons">
-						<a href="contacts.html" class="btn btn--primary">Download App</a>
-				</div>
 				<div class="burger-menu">
 						<span></span>
 						<span></span>
@@ -37,24 +34,24 @@
             <div class="container">
                 <div class="rules-hero__content">
                     <h1>Fantasy Cricket Rules</h1>
-                    <p>Understand how to play and win on Sky247 - Your ultimate fantasy cricket destination</p>
+                    <p>Learn how to play on Sky247 - Your ultimate fantasy cricket destination</p>
                     <div class="rules-hero__stats">
                         <div class="rules-stat">
                             <span class="rules-stat__number">11</span>
                             <span class="rules-stat__label">Players per Team</span>
                         </div>
                         <div class="rules-stat">
-                            <span class="rules-stat__number">100</span>
-                            <span class="rules-stat__label">Credits</span>
-                        </div>
-                        <div class="rules-stat">
                             <span class="rules-stat__number">2x</span>
                             <span class="rules-stat__label">Captain Points</span>
                         </div>
+                        <div class="rules-stat">
+                            <span class="rules-stat__number">1.5x</span>
+                            <span class="rules-stat__label">Vice-Captain Points</span>
+                        </div>
                     </div>
                 </div>
-                <div class="rules-hero__image">
-                    <img src="img/rules-hero.jpg" alt="Fantasy Cricket Rules">
+                <div class="rules-hero__image fade-in">
+                    <img src="img/rules-hero.jpg" alt="Fantasy Cricket Rules" class="floating-animation">
                 </div>
             </div>
         </section>
@@ -64,13 +61,11 @@
                 <div class="rules__content">
                     <div class="rules-grid">
                         <div class="rule-card">
-                            <svg class="rule-card__icon" width="40" height="40" viewBox="0 0 40 40">
-                                <path fill="#00FF88" d="M20 0C8.954 0 0 8.954 0 20s8.954 20 20 20 20-8.954 20-20S31.046 0 20 0zm0 6c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6zm0 28c-5.01 0-9.42-2.56-12-6.44.03-3.98 8-6.16 12-6.16s11.97 2.18 12 6.16c-2.58 3.88-6.99 6.44-12 6.44z"/>
-                            </svg>
                             <h3>Team Creation</h3>
-                            <div class="points-table">
+                            <div class="rule-content">
+                                <p>Basic team formation rules:</p>
                                 <ul>
-                                    <li>Select 11 players within the credit limit</li>
+                                    <li>Select 11 players</li>
                                     <li>Include players from both participating teams</li>
                                     <li>Appoint a captain and vice-captain</li>
                                     <li>Maintain team composition balance</li>
@@ -79,243 +74,161 @@
                         </div>
 
                         <div class="rule-card">
-                            <svg class="rule-card__icon" width="40" height="40" viewBox="0 0 40 40">
-                                <path fill="#00FF88" d="M36 4H4C1.79 4 0 5.79 0 8v24c0 2.21 1.79 4 4 4h32c2.21 0 4-1.79 4-4V8c0-2.21-1.79-4-4-4zM16 28H8v-4h8v4zm0-8H8v-4h8v4zm0-8H8V8h8v4zm16 16h-8v-4h8v4zm0-8h-8v-4h8v4zm0-8h-8V8h8v4z"/>
-                            </svg>
-                            <h3>Team Formation</h3>
-                            <div class="points-table">
+                            <h3>Contest Participation</h3>
+                            <div class="rule-content">
+                                <p>Tournament participation rules:</p>
                                 <ul>
-                                    <li>1-4 Wicket-keepers</li>
-                                    <li>3-6 Batsmen</li>
-                                    <li>3-6 All-rounders</li>
-                                    <li>3-6 Bowlers</li>
+                                    <li>One team per contest</li>
+                                    <li>Multiple contest participation allowed</li>
+                                    <li>Follow contest guidelines</li>
+                                    <li>Meet all deadlines</li>
                                 </ul>
                             </div>
                         </div>
 
                         <div class="rule-card">
-                            <svg class="rule-card__icon" width="40" height="40" viewBox="0 0 40 40">
-                                <path fill="#00FF88" d="M20 0L4 10v20l16 10 16-10V10L20 0zm0 8l8 5-8 5-8-5 8-5zm-12 9l10 6v11l-10-6V17zm24 0v11l-10 6V23l10-6z"/>
-                            </svg>
-                            <h3>Points System</h3>
-                            <div class="points-table">
+                            <h3>Fair Play</h3>
+                            <div class="rule-content">
+                                <p>Fair play principles:</p>
                                 <ul>
-                                    <li>Run scored: 1 point</li>
-                                    <li>Boundary bonus: 1 point</li>	
-                                    <li>Six bonus: 2 points</li>
-                                    <li>Half-century bonus: 20 points</li>
-                                    <li>Century bonus: 40 points</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="rule-card">
-                            <svg class="rule-card__icon" width="40" height="40" viewBox="0 0 40 40">
-                                <path fill="#00FF88" d="M35.92 12.62L20 4 4.08 12.62a1 1 0 000 1.76L20 23l15.92-8.62a1 1 0 000-1.76zM20 35.91L6.08 28.29a1 1 0 010-1.76L20 19l13.92 7.53a1 1 0 010 1.76L20 35.91z"/>
-                            </svg>
-                            <h3>Bowling Points</h3>
-                            <div class="points-table">
-                                <ul>
-                                    <li>Wicket: 25 points</li>
-                                    <li>3 wicket bonus: 20 points</li>
-                                    <li>4 wicket bonus: 30 points</li>
-                                    <li>5 wicket bonus: 50 points</li>
-                                    <li>Maiden over: 12 points</li>
+                                    <li>One account per user</li>
+                                    <li>No bot usage allowed</li>
+                                    <li>Follow communication ethics</li>
+                                    <li>Respect other participants</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
-                    <section class="additional-rules">
-                        <h2>Additional Rules</h2>
-                        <div class="additional-rules__grid">
+                    <section class="rules-section">
+                        <h2>Point System</h2>
+                        <div class="rules-grid">
                             <div class="rule-card">
-                                <svg class="rule-card__icon" width="40" height="40" viewBox="0 0 40 40">
-                                    <path fill="#00FF88" d="M36 4H4C1.79 4 0 5.79 0 8v24c0 2.21 1.79 4 4 4h32c2.21 0 4-1.79 4-4V8c0-2.21-1.79-4-4-4zM16 28H8v-4h8v4zm0-8H8v-4h8v4zm0-8H8V8h8v4zm16 16h-8v-4h8v4zm0-8h-8v-4h8v4zm0-8h-8V8h8v4z"/>
-                                </svg>
+                                <h3>Batting Points</h3>
+                                <div class="points-table">
+                                    <ul>
+                                        <li>Each run <span>1 point</span></li>
+                                        <li>50 runs bonus <span>20 points</span></li>
+                                        <li>100 runs bonus <span>50 points</span></li>
+                                        <li>Six <span>8 points</span></li>
+                                        <li>Four <span>4 points</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="rule-card">
+                                <h3>Bowling Points</h3>
+                                <div class="points-table">
+                                    <ul>
+                                        <li>Each wicket <span>25 points</span></li>
+                                        <li>Maiden over <span>12 points</span></li>
+                                        <li>3+ wickets bonus <span>20 points</span></li>
+                                        <li>5+ wickets bonus <span>50 points</span></li>
+                                        <li>Economy (under 4 RPO) <span>15 points</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="rule-card">
                                 <h3>Fielding Points</h3>
                                 <div class="points-table">
                                     <ul>
-                                        <li>Catch: 8 points</li>
-                                        <li>Stumping: 12 points</li>
-                                        <li>Run out: 12 points</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="rule-card">
-                                <svg class="rule-card__icon" width="40" height="40" viewBox="0 0 40 40">
-                                    <path fill="#00FF88" d="M20 0L4 10v20l16 10 16-10V10L20 0zm0 8l8 5-8 5-8-5 8-5zm-12 9l10 6v11l-10-6V17zm24 0v11l-10 6V23l10-6z"/>
-                                </svg>
-                                <h3>Additional Bonuses</h3>
-                                <div class="points-table">
-                                    <ul>
-                                        <li>Man of the Match: 20 points</li>
-                                        <li>Fastest Fifty: 15 points</li>
-                                        <li>Fastest Century: 25 points</li>
+                                        <li>Catch <span>8 points</span></li>
+                                        <li>Stumping <span>12 points</span></li>
+                                        <li>Run out (direct) <span>12 points</span></li>
+                                        <li>Run out (indirect) <span>6 points</span></li>
+                                        <li>Special catch <span>12 points</span></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </section>
 
-                    <section class="important-rules">
-                        <h2>Important Rules</h2>
-                        <div class="important-rules__grid">
+                    <section class="rules-section">
+                        <h2>Special Achievements</h2>
+                        <div class="rules-grid">
                             <div class="rule-card">
-                                <h3>Team Management</h3>
+                                <h3>Tournament Achievements</h3>
                                 <div class="rule-content">
-                                    <p>Teams can be modified until the official match deadline. Make sure to review and confirm your team composition before the cutoff time. Last-minute changes are not permitted once the deadline has passed.</p>
                                     <ul>
-                                        <li>Review team before deadline</li>
-                                        <li>No changes after cutoff time</li>
-                                        <li>Verify player availability</li>
+                                        <li>Season Champion</li>
+                                        <li>Top 10 Players</li>
+                                        <li>Best Manager of the Month</li>
+                                        <li>Winning Streak</li>
                                     </ul>
                                 </div>
                             </div>
 
                             <div class="rule-card">
-                                <h3>Eligibility & Fair Play</h3>
+                                <h3>Daily Achievements</h3>
                                 <div class="rule-content">
-                                    <p>All players must be 18 years or older to participate. Multiple accounts or teams in the same contest are strictly prohibited. We maintain a zero-tolerance policy for any form of unfair play.</p>
                                     <ul>
-                                        <li>Age verification required</li>
-                                        <li>One account per user</li>
-                                        <li>Fair play monitoring</li>
+                                        <li>First Game of the Day</li>
+                                        <li>5 Games in a Row</li>
+                                        <li>Perfect Team Selection</li>
+                                        <li>Best Daily Performance</li>
                                     </ul>
                                 </div>
                             </div>
 
                             <div class="rule-card">
-                                <h3>Contest Participation</h3>
+                                <h3>Special Awards</h3>
                                 <div class="rule-content">
-                                    <p>Users can join multiple contests but can only enter one team per contest. Each contest has specific entry fees and prize distributions. Make sure to read contest details carefully before joining.</p>
                                     <ul>
-                                        <li>One team per contest</li>
-                                        <li>Multiple contest entry allowed</li>
-                                        <li>Check prize structure</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="rule-card">
-                                <h3>Payment & Withdrawals</h3>
-                                <div class="rule-content">
-                                    <p>All transactions are processed securely through authorized payment gateways. Withdrawals are processed within 24-48 hours after verification. Maintain accurate payment details for smooth transactions.</p>
-                                    <ul>
-                                        <li>Secure payment methods</li>
-                                        <li>Quick withdrawal process</li>
-                                        <li>KYC verification needed</li>
+                                        <li>Innovative Strategy</li>
+                                        <li>Consistent Performance</li>
+                                        <li>Community Engagement</li>
+                                        <li>Sportsmanship</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </section>
-                </div>
-            </div>
-        </section>
 
-        <section class="special-rewards">
-            <div class="container">
-                <h2>Special Rewards and Bonuses</h2>
-                <div class="rewards-grid">
-                    <div class="reward-card">
-                        <div class="reward-icon">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/>
-                            </svg>
-                        </div>
-                        <h3>Tournament Achievements</h3>
-                        <ul>
-                            <li>Season Winner: 10000 bonus points</li>
-                            <li>Top 10 Players: 5000 bonus points</li>
-                            <li>Best Manager of the Month: 2000 points</li>
-                        </ul>
-                    </div>
+                    <section id="faq" class="rules-faq">
+                        <h2>Frequently Asked Questions</h2>
+                        <div class="faq-list">
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <span>How do I create my first team?</span>
+                                    <span class="faq-toggle">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>To create your first team, select an upcoming match and click the "Create Team" button. Choose 11 players following the team composition rules. Don't forget to appoint a captain and vice-captain!</p>
+                                </div>
+                            </div>
 
-                    <div class="reward-card">
-                        <div class="reward-icon">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
-                            </svg>
-                        </div>
-                        <h3>Daily Bonuses</h3>
-                        <ul>
-                            <li>First Game of the Day: 100 points</li>
-                            <li>5 Game Streak: 500 points</li>
-                            <li>Refer a Friend: 1000 points</li>
-                        </ul>
-                    </div>
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <span>What happens if a match is cancelled?</span>
+                                    <span class="faq-toggle">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>If a match is cancelled or postponed, all related contests will be cancelled, and your teams will be returned.</p>
+                                </div>
+                            </div>
 
-                    <div class="reward-card">
-                        <div class="reward-icon">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20v6z"/>
-                            </svg>
-                        </div>
-                        <h3>Special Achievements</h3>
-                        <ul>
-                            <li>Perfect Captain: 300 points</li>
-                            <li>Match Prediction: 200 points</li>
-                            <li>Winning Streak: up to 1000 points</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <span>How are points calculated?</span>
+                                    <span class="faq-toggle">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Points are calculated based on players' actual performance in the match. This includes runs, wickets, catches, and other statistics. Captain points are multiplied by 2x and vice-captain points by 1.5x.</p>
+                                </div>
+                            </div>
 
-        <section id="faq" class="rules-faq">
-            <div class="container">
-                <h2>Frequently Asked Questions</h2>
-                <div class="faq-list">
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <span>How do I create my first team?</span>
-                            <span class="faq-toggle">+</span>
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <span>Can I create multiple teams?</span>
+                                    <span class="faq-toggle">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Yes, you can create multiple teams for the same match, but you can only enter one team per contest. Different contests may have different rules regarding multiple entries.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="faq-answer">
-                            <p>To create your first team, select an upcoming match and click the "Create Team" button. Choose 11 players within the credit limit, ensuring you follow the team composition rules. Don't forget to select a captain and vice-captain!</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <span>What happens if a match is cancelled?</span>
-                            <span class="faq-toggle">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            <p>If a match is cancelled or abandoned, all contests related to that match will be cancelled, and entry fees will be refunded to your account balance within 24 hours.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <span>How are points calculated?</span>
-                            <span class="faq-toggle">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Points are calculated based on players' actual performance in the match. This includes runs scored, wickets taken, catches, run-outs, and other cricket statistics. Captain's points are multiplied by 2x and Vice-captain's by 1.5x.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <span>When can I withdraw my winnings?</span>
-                            <span class="faq-toggle">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Winnings can be withdrawn once the match and contest results are officially declared. The minimum withdrawal amount is ₹200, and the process typically takes 24-48 hours to complete.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <span>Can I create multiple teams?</span>
-                            <span class="faq-toggle">+</span>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Yes, you can create multiple teams for the same match, but you can only join a contest once with one team. Different contests may have different rules regarding multiple team entries.</p>
-                        </div>
-                    </div>
+                    </section>
                 </div>
             </div>
         </section>
@@ -326,7 +239,7 @@
 					<section class="footer__grid">
 							<div class="footer__info">
 									<img src="img/logo.svg" alt="Sky247" class="footer__logo">
-									<p>Your trusted fantasy cricket platform for creating teams and winning prizes.</p>
+									<p>Your trusted fantasy cricket platform for creating teams and enjoying the game.</p>
 									<div class="footer__social">
 											<a href="index.html"><svg width="24" height="24" viewBox="0 0 24 24">
 													<path fill="currentColor" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/>
@@ -361,11 +274,11 @@
 													<svg width="20" height="20" viewBox="0 0 20 20">
 															<path fill="currentColor" d="M17 3H3c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 12H3V7l7 4 7-4v8zm-7-5L3 6h14l-7 4z"/>
 													</svg>
-													<a href="mailto:sky247@gmail.com">sky247@gmail.com</a>
+													<a href="mailto:contact@sky247.com">contact@sky247.com</a>
 											</li>
 											<li>
 													<svg width="20" height="20" viewBox="0 0 20 20">
-															<path fill="currentColor" d="M17.256 12.253c-.096-.667-.611-1.187-1.274-1.342-2.577-.604-3.223-2.088-3.332-3.734C12.193 7.092 11.38 7 10 7s-2.193.092-2.65.177c-.109 1.646-.755 3.13-3.332 3.734-.663.156-1.178.675-1.274 1.342l-.497 3.442C2.072 16.907 2.962 18 4.2 18h11.6c1.237 0 2.128-1.093 1.953-2.305l-.497-3.442zM10 15.492c-1.395 0-2.526-1.12-2.526-2.5s1.131-2.5 2.526-2.5 2.526 1.12 2.526 2.5-1.132 2.5-2.526 2.5zM19.95 6c-.024-1.5-3.842-3.999-9.95-4C3.891 2.001.073 4.5.05 6s.021 3.452 2.535 3.127c2.941-.381 2.76-1.408 2.76-2.876C5.345 5.227 7.737 4.98 10 4.98s4.654.247 4.655 1.271c0 1.468-.181 2.495 2.76 2.876C19.928 9.452 19.973 7.5 19.95 6z"/>
+															<path fill="currentColor" d="M17.256 12.253c-.096-.667-.611-1.187-1.274-2.577-.604-3.223-2.088-3.332-3.734C12.193 7.092 11.38 7 10 7s-2.193.092-2.65.177c-.109 1.646-.755 3.13-3.332 3.734-.663.156-1.178.675-1.274 1.342l-.497 3.442C2.072 16.907 2.962 18 4.2 18h11.6c1.237 0 2.128-1.093 1.953-2.305l-.497-3.442zM10 15.492c-1.395 0-2.526-1.12-2.526-2.5s1.131-2.5 2.526-2.5 2.526 1.12 2.526 2.5-1.132 2.5-2.526 2.5zM19.95 6c-.024-1.5-3.842-3.999-9.95-4C3.891 2.001.073 4.5.05 6s.021 3.452 2.535 3.127c2.941-.381 2.76-1.408 2.76-2.876C5.345 5.227 7.737 4.98 10 4.98s4.654.247 4.655 1.271c0 1.468-.181 2.495 2.76 2.876C19.928 9.452 19.973 7.5 19.95 6z"/>
 													</svg>
 													<a href="tel:+917392851460">+91 (739) 285-1460</a>
 											</li>

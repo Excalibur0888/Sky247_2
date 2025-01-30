@@ -105,24 +105,60 @@ document.addEventListener('DOMContentLoaded', function() {
     
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
-        const toggle = item.querySelector('.faq-toggle');
         
         question.addEventListener('click', () => {
             const isActive = item.classList.contains('active');
             
-            // Close all items
+            // Закрываем все активные FAQ
             faqItems.forEach(otherItem => {
                 otherItem.classList.remove('active');
-                otherItem.querySelector('.faq-toggle').textContent = '+';
             });
             
-            // Open clicked item if it wasn't active
+            // Открываем текущий FAQ если он был закрыт
             if (!isActive) {
                 item.classList.add('active');
-                toggle.textContent = '−';
             }
         });
     });
+
+    // Мобильное меню
+    const burgerMenu = document.querySelector('.burger-menu');
+    const nav = document.querySelector('.nav');
+    const body = document.body;
+
+    burgerMenu?.addEventListener('click', () => {
+        burgerMenu.classList.toggle('active');
+        nav.classList.toggle('active');
+        body.classList.toggle('no-scroll');
+    });
+
+    // Закрытие мобильного меню при клике на ссылку
+    const navLinks = document.querySelectorAll('.nav__list a');
+    
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            burgerMenu.classList.remove('active');
+            nav.classList.remove('active');
+            body.classList.remove('no-scroll');
+        });
+    });
+
+    // Анимация при скролле
+    const fadeElements = document.querySelectorAll('.fade-in');
+    
+    const fadeInOnScroll = () => {
+        fadeElements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+            const elementBottom = element.getBoundingClientRect().bottom;
+            
+            if (elementTop < window.innerHeight && elementBottom > 0) {
+                element.classList.add('visible');
+            }
+        });
+    };
+
+    window.addEventListener('scroll', fadeInOnScroll);
+    fadeInOnScroll(); // Запускаем один раз при загрузке
 });
 
 // Numbers animation
@@ -162,50 +198,6 @@ function animateNumbers() {
 
 // Call animation function when DOM is loaded
 animateNumbers();
-
-// Burger Menu
-document.addEventListener('DOMContentLoaded', function() {
-    const burgerMenu = document.querySelector('.burger-menu');
-    const nav = document.querySelector('.nav');
-    const body = document.body;
-
-    if (burgerMenu && nav) {
-        burgerMenu.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            burgerMenu.classList.toggle('active');
-            nav.classList.toggle('active');
-            body.classList.toggle('no-scroll');
-        });
-
-        // Close menu when clicking on a link
-        nav.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                burgerMenu.classList.remove('active');
-                nav.classList.remove('active');
-                body.classList.remove('no-scroll');
-            });
-        });
-
-        // Close menu when clicking outside
-        document.addEventListener('click', function(e) {
-            if (nav.classList.contains('active') && !nav.contains(e.target) && !burgerMenu.contains(e.target)) {
-                burgerMenu.classList.remove('active');
-                nav.classList.remove('active');
-                body.classList.remove('no-scroll');
-            }
-        });
-
-        // Close menu on escape key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && nav.classList.contains('active')) {
-                burgerMenu.classList.remove('active');
-                nav.classList.remove('active');
-                body.classList.remove('no-scroll');
-            }
-        });
-    }
-});
 
 // Testimonials Slider
 document.addEventListener('DOMContentLoaded', function() {
