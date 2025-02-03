@@ -97,6 +97,7 @@ h2 {
 	width: 200px;
 	justify-self: center;
 	align-self: center;
+	margin: 0 auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
