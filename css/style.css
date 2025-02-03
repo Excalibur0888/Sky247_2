@@ -1004,6 +1004,7 @@ h2 {
 
 .footer__bottom {
   display: flex;
+	width: 100%;
   justify-content: center;
   align-items: center;
   padding-top: 40px;
@@ -1014,13 +1015,55 @@ h2 {
   color: var(--text-secondary);
 }
 
-.footer__payments {
+.footer__certifications {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  gap: 15px;
 }
 
-.footer__payments img {
-  height: 30px;
+.footer__gamcare {
+  display: flex;
+  align-items: center;
+}
+
+.footer__gamcare img {
+  height: 40px;
+  width: auto;
+}
+
+.age-restriction {
+  width: 40px;
+  height: 40px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .footer__bottom {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer__certifications {
+    justify-content: center;
+  }
+
+  .footer__gamcare img {
+    height: 30px;
+  }
+
+  .age-restriction {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
 }
 
 /* Mobile Menu */
